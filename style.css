@@ -114,6 +114,7 @@ body{background:#D8CCF0;font-family:'Inter',sans-serif;color:var(--text1);displa
 
 /* Feedback */
 .feedback-screen{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;text-align:center;position:relative;background:radial-gradient(ellipse at center,var(--purple-lt) 0%,transparent 70%);}
+.feedback-screen .btn-primary{width:260px;max-width:90%;}
 .feedback-img{width:180px;height:180px;object-fit:contain;animation:growIn 0.7s cubic-bezier(.175,.885,.32,1.275);}
 @keyframes growIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
 .feedback-title{font-size:26px;font-weight:700;margin:16px 0 8px;color:var(--text1);}
@@ -161,16 +162,16 @@ body{background:#D8CCF0;font-family:'Inter',sans-serif;color:var(--text1);displa
 
 /* === NARRATIVA NU-ZONÍA === */
 .monu-tip{display:flex;align-items:center;gap:12px;background:var(--purple-lt);border:1px solid #DDD0F5;border-radius:16px;padding:14px 16px;margin:0 20px 14px;}
-.monu-tip-img{width:52px;height:52px;object-fit:contain;flex-shrink:0;}
+.monu-tip-img{width:64px;height:64px;object-fit:contain;flex-shrink:0;}
 .monu-tip-text{font-size:13px;color:var(--purple);font-weight:600;line-height:1.4;}
 .monu-tip-sub{font-size:12px;color:var(--text2);margin-top:2px;font-weight:400;}
 .consumidor-warn{display:flex;flex-direction:column;align-items:center;padding:0 24px;}
 .consumidor-img{width:130px;height:130px;object-fit:contain;opacity:0.85;}
 .consumidor-label{font-size:11px;font-weight:700;letter-spacing:1px;color:#B85A00;text-transform:uppercase;margin-top:4px;}
 .narrative-badge{display:flex;align-items:center;gap:10px;background:#FFF8EC;border:1px solid #F0D080;border-radius:14px;padding:12px 16px;margin:8px 20px;}
-.narrative-badge-img{width:44px;height:44px;object-fit:contain;flex-shrink:0;}
+.narrative-badge-img{width:56px;height:56px;object-fit:contain;flex-shrink:0;}
 .narrative-badge-text{font-size:12px;color:#7A5800;font-weight:600;line-height:1.4;}
-.logro-cosecha{width:90px;height:90px;object-fit:contain;margin:0 auto 8px;display:block;}
+.logro-cosecha{width:100px;height:100px;object-fit:contain;margin:0 auto 4px;display:block;}
 .nuzonia-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text2);text-transform:uppercase;text-align:center;margin-bottom:4px;}
 /* Share sheet */
 .share-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#1A053380;display:none;align-items:flex-end;justify-content:center;z-index:200;backdrop-filter:blur(4px);}
