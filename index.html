@@ -86,6 +86,17 @@
         <div class="reto-sub">En progreso</div>
       </div>
     </div>
+    <!-- Monu tip Home -->
+    <div style="padding:14px 20px 0">
+      <div class="nuzonia-tag">Monu dice</div>
+      <div class="monu-tip">
+        <img class="monu-tip-img" src="assets/monu_cultivador.png" alt="Monu">
+        <div>
+          <div class="monu-tip-text">“Cada peso que siembras es una semilla en Nu-Zonía”</div>
+          <div class="monu-tip-sub">Sigue cultivando para que tu cosecha florezca</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- SCREEN 2: MI SIEMBRA -->
@@ -126,6 +137,19 @@
       <div class="reto-check pending"></div>
       <div><div class="reto-text">Mantener siembra 7 días</div><div class="reto-sub">5/7 días</div></div>
     </div>
+    <!-- Flor dinero badge -->
+    <div class="narrative-badge">
+      <img class="narrative-badge-img" src="assets/flor_dinero.png" alt="flor">
+      <div class="narrative-badge-text">“Tu cosecha crece cada día que eliges ser Cultivador. ¡Protégela!”</div>
+    </div>
+    <!-- Monu tip Siembra -->
+    <div class="monu-tip" style="margin-top:4px">
+      <img class="monu-tip-img" src="assets/monu_cultivador.png" alt="Monu">
+      <div>
+        <div class="monu-tip-text">Tip de Monu</div>
+        <div class="monu-tip-sub">Sembrar más de $50.000 activa el reto especial de Nu-Zonía</div>
+      </div>
+    </div>
   </div>
 
   <!-- SCREEN 3: SEMBRAR -->
@@ -161,6 +185,8 @@
       <img class="feedback-img" id="feedback-img" src="flores/planta.png" alt="creció">
       <div class="feedback-title">¡Tu siembra creció!</div>
       <div class="feedback-sub" id="feedback-sub">Estás más cerca de tu primera flor</div>
+      <!-- Monu celebra -->
+      <img src="assets/monu_cultivador.png" alt="Monu feliz" style="width:70px;height:70px;object-fit:contain;margin-bottom:8px;">
       <button class="btn-primary" onclick="goTo('s-siembra')">Ver mi jardín</button>
     </div>
   </div>
@@ -234,9 +260,14 @@
       Mi Siembra
     </button>
     <div class="inactivity-screen">
-      <img class="warn-img" src="flores/marchita.png" alt="marchita">
+      <!-- Consumidor aparece -->
+      <div class="consumidor-warn">
+        <img class="consumidor-img" src="assets/monu_consumidor.png" alt="Consumidor">
+        <div class="consumidor-label">⚠️ El Consumidor está cerca</div>
+      </div>
+      <img class="warn-img" src="flores/marchita.png" alt="marchita" style="width:130px;height:130px;margin-top:8px;">
       <div class="warn-title">Tu dinero está quieto…</div>
-      <div class="warn-sub">Muévelo para proteger tu cosecha antes de que se marchite del todo</div>
+      <div class="warn-sub">El Consumidor acecha cuando no actúas.<br>Mueve tu dinero para proteger tu cosecha.</div>
       <button class="btn-primary" onclick="goTo('s-sembrar')">Sembrar ahora</button>
     </div>
   </div>
@@ -244,9 +275,11 @@
   <!-- LOGRO MODAL -->
   <div class="modal-overlay" id="modal-logro">
     <div class="modal-box">
-      <img class="modal-badge" src="flores/flor.png" alt="logro">
+      <div class="nuzonia-tag">Nu-Zonía · Logro desbloqueado</div>
+      <img class="logro-cosecha" src="assets/cosecha.png" alt="cosecha">
+      <img class="modal-badge" src="flores/flor.png" alt="logro" style="width:70px;height:70px;">
       <div class="modal-title">¡Primera Flor Desbloqueada!</div>
-      <div class="modal-sub">Convertiste el miedo en acción 🌸</div>
+      <div class="modal-sub">Convertiste el miedo en acción. Tu cosecha en Nu-Zonía está floreciendo 🌸</div>
       <div class="modal-actions">
         <button class="btn-secondary" style="flex:1;padding:12px;font-size:14px;" onclick="closeLogro()">Compartir</button>
         <button class="btn-primary" style="flex:1;padding:12px;font-size:14px;" onclick="closeLogro()">Seguir</button>
