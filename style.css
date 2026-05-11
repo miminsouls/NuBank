@@ -172,6 +172,22 @@ body{background:#D8CCF0;font-family:'Inter',sans-serif;color:var(--text1);displa
 .narrative-badge-text{font-size:12px;color:#7A5800;font-weight:600;line-height:1.4;}
 .logro-cosecha{width:90px;height:90px;object-fit:contain;margin:0 auto 8px;display:block;}
 .nuzonia-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text2);text-transform:uppercase;text-align:center;margin-bottom:4px;}
+/* Share sheet */
+.share-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#1A053380;display:none;align-items:flex-end;justify-content:center;z-index:200;backdrop-filter:blur(4px);}
+.share-overlay.show{display:flex;}
+.share-sheet{background:var(--surface);border-radius:28px 28px 0 0;padding:20px 20px 28px;width:100%;animation:slideUp 0.3s ease;}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.share-handle{width:40px;height:4px;background:var(--border);border-radius:4px;margin:0 auto 16px;}
+.share-card-preview{background:linear-gradient(135deg,#820AD1,#5A0099);border-radius:20px;padding:18px;display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+.share-card-monu{width:58px;height:58px;object-fit:contain;flex-shrink:0;}
+.share-card-text{color:#fff;}
+.share-card-title{font-size:15px;font-weight:700;}
+.share-card-sub{font-size:12px;opacity:0.8;margin-top:3px;}
+.share-card-tag{font-size:10px;font-weight:700;letter-spacing:1px;opacity:0.65;text-transform:uppercase;margin-top:6px;}
+.share-options{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px;}
+.share-opt{background:var(--surface2);border-radius:14px;padding:12px 8px;text-align:center;cursor:pointer;font-size:11px;font-weight:600;color:var(--text1);transition:all 0.2s;border:1px solid var(--border);}
+.share-opt:hover{border-color:var(--purple);color:var(--purple);background:var(--purple-lt);}
+.share-opt svg{display:block;margin:0 auto 5px;}
 
 /* Nav */
 .nav-bar{display:flex;justify-content:space-around;padding:10px 0 16px;border-top:1px solid var(--border);background:var(--surface);}

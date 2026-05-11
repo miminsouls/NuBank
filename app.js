@@ -94,3 +94,14 @@ function showLogro() {
 function closeLogro() {
   document.getElementById('modal-logro').classList.remove('show');
 }
+
+function openShare(title, sub) {
+  document.getElementById('share-title').textContent = title;
+  document.getElementById('share-sub').textContent = sub;
+  document.getElementById('modal-logro').classList.remove('show');
+  document.getElementById('share-overlay').classList.add('show');
+}
+
+function closeShare(e) {
+  document.getElementById('share-overlay').classList.remove('show');
+}
